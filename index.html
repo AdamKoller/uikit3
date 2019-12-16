@@ -10,14 +10,14 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class= 'uk-navbar-container' uk-navbar> <!-- uk-navbar-container to define background style ;add uk-navbar ATTRIBUTE to define navbar -->
+    <nav class= 'uk-navbar-container' uk-navbar> <!-- uk-navbar-container to define background style ;add uk-navbar ATTRIBUTE to define navbar;uses HOVER -->
       <div class='uk-navbar-left'>  <!-- align navbar items to left; can also use right or center-->
         <ul class='uk-navbar-nav'> <!-- uk-navbar-nav to ul element to create navigation -->
           <li class='uk-active'> <!-- indicates an active menu item; bold text -->
             <a href='#'>active</a>
           </li>
           <li>
-            <a href='#'>parent</a>
+            <a href='#'>hover me</a>
             <div class="uk-navbar-dropdown">
               <ul class='uk-nav uk-navbar-dropdown-nav'>
                 <li class='uk-active'>
@@ -36,6 +36,41 @@
             <a href="#">item</a>
           </li>
         </ul>
+      </div>
+      <div class="uk-navbar-center uk-text-bold uk-text-large uk-text-italic">
+        Navbar 1
+      </div>
+    </nav>
+
+    <nav class='uk-navbar-container' uk-navbar='mode: click'> <!-- same nav as above EXCEPT mode:click enables click navigation -->
+      <div class='uk-navbar-right'>
+        <ul class='uk-navbar-nav'>
+          <li class='uk-active'>
+            <a href="#">active</a>
+          </li>
+          <li>
+            <a href="#">click me</a>
+            <div class="uk-navbar-dropdown">
+              <ul class='uk-nav uk-navbar-dropdown-nav'>
+                <li class='uk-active'>
+                  <a href="#">active</a>
+                </li>
+                <li>
+                  <a href="#">item</a>
+                </li>
+                <li>
+                  <a href="#">item</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">item</a>
+          </li>
+        </ul>
+      </div>
+      <div class="uk-navbar-center uk-text-bold uk-text-large uk-text-italic">
+        Navbar 2
       </div>
     </nav>
 
